@@ -12,7 +12,7 @@ export class OmdbService {
 
   searchMovies(): Observable<any> {
     if (this.movieTitle === undefined || this.movieTitle === null) { this.movieTitle = ''; }
-    const url = 'https://omdb-backend.herokuapp.com/api/omdb/search?title=' + this.movieTitle;
+    const url = 'https://omdb-backend-apna.herokuapp.com/api/omdb/search?title=' + this.movieTitle;
     
     return this.http.get(url);
   }
